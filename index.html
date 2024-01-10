@@ -1,6 +1,100 @@
 <!DOCTYPE html>
-<body>
-    <h1>Halo</p>
-    <p>World</p>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="all.css">
+		<link rel="stylesheet" href="index.css">
+	</head>
 
-</body>
+	<body>
+<!-- 
+	Hero Section accessibility, header? heading?
+	TITLE seperator
+-->
+
+
+		<main>
+
+			<section class="hero">
+				<heading>
+					<p><span>—</span> You Perfect Journey to</p>
+					<h1>Morocco</h1>
+				</heading>
+			</section>
+
+			<section class="excursion">
+				<heading>
+					<h2>Excursion</h2>
+					<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable. Passez vos journées à explorer les cours intérieures paisibles, les ruelles tortueuses de la Médina historique</p>
+					<!-- <div class="seperator"></div> -->
+				</heading>
+
+				<div class="tabgroup">
+					<div class="tab">
+						<button class="tablinks selected" onclick="openCity(event)">Casablanca</button>
+						<button class="tablinks" onclick="openCity(event)">Marrakech</button>
+						<button class="tablinks" onclick="openCity(event)">Chefchaoun</button>
+					</div>
+
+					<div class="tabcontent" >
+						<img src="assets/images/cities/casablanca.jpg"/>
+						<div class="about">
+							<p>Casablanca</p>
+							<h3>The Capital and the largest city</h3>
+							<p class="time">1 night</p>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<ul>
+								<li><img src="assets/svgs/dinner.svg"/> Dinner included</li>
+								<li><img src="assets/svgs/backpack.svg"/> Leave your backpack in the hotel</li>
+								<li><img src="assets/svgs/plane.svg"/> Transfer from the hotel</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="tabcontent" hidden>
+						<img src="assets/images/cities/marrakech.jpg"/>
+						<div class="about">
+							<p>Casablanca</p>
+							<h3>The Capital and the largest city</h3>
+							<p class="time">1 night</p>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<ul>
+								<li><img src="assets/svgs/dinner.svg"/> Dinner included</li>
+								<li><img src="assets/svgs/backpack.svg"/> Leave your backpack in the hotel</li>
+								<li><img src="assets/svgs/plane.svg"/> Transfer from the hotel</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="tabcontent" hidden>
+						<img src="assets/images/cities/chefchaouen.jpg"/>
+						<div class="about">
+							<p>Casablanca</p>
+							<h3>The Capital and the largest city</h3>
+							<p class="time">1 night</p>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<ul>
+								<li><img src="assets/svgs/dinner.svg"/> Dinner included</li>
+								<li><img src="assets/svgs/backpack.svg"/> Leave your backpack in the hotel</li>
+								<li><img src="assets/svgs/plane.svg"/> Transfer from the hotel</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+
+		</main>
+		<script>
+			const openCity = (e) => {
+				const siblings = Array.from(e.target.parentNode.children);
+				const order = siblings.indexOf(e.target);
+				const tabContent = e.target.closest('.tabgroup').querySelectorAll('.tabcontent');
+				tabContent.forEach( (e,i) => e.hidden = ( i != order) )
+				siblings.forEach( (e,i) => e.classList.toggle('selected', i === order) )
+			}
+		</script>
+	</body>
+</html>
