@@ -34,7 +34,7 @@ p{
 }
 .hero heading h1{
 	font-family: "Venicelacorla";
-	font-size: 7rem;
+	font-size: 12vw;
 	line-height:150%;
 	margin:0;
 }
@@ -47,8 +47,7 @@ p{
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	padding: 2rem 5rem;
-	width: 100%;
+	/* padding: 2rem 5rem; */
 	box-sizing: border-box;
 }
 
@@ -59,7 +58,7 @@ p{
 }
 .excursion heading h2 {
 	font-size:3rem;
-	margin:0;
+	padding:1em 0 .5em;
 	font-family: times, serif;
 }
 .excursion heading p{
@@ -69,7 +68,8 @@ p{
 
 
 .tabgroup {
-	margin: 2rem 0;
+	width: 95%;
+	margin: 2rem auto;
 	background-color: white;
 	border-radius: 2em;
 	overflow:hidden;
@@ -105,6 +105,17 @@ p{
 	flex: 50%;
 	overflow: hidden;
 	object-fit: cover;
+}
+
+@media (max-width: 600px) {
+	.tabcontent:not([hidden]){
+		flex-direction: column;
+	}
+
+	.tabcontent > * {
+		flex: 100%;
+		height: auto; /* Allow the image to maintain its aspect ratio */
+	}
 }
 
 .tabcontent > .about {
