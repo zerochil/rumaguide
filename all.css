@@ -42,12 +42,13 @@ main{
 
 footer li{ padding: .5em 0; }
 footer li, footer a, footer h2{ color: #eee; }
-footer{
+footer.section{
 	display: flex;
 	align-items: cener;
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 2em;
+	padding: 10vh 0;
 }
 footer.section::before{
 	background: var(--super-dark-accent);
@@ -70,7 +71,7 @@ footer li {list-style: none;}
 	top: 0; 
 	left: 50%;
 	transform: translateX(-50%);
-	width: 110vw; 
+	width: 100vw; 
 	height: 100%;  
 	z-index: -1;
 	filter: blur(15px);

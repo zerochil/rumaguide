@@ -13,8 +13,9 @@ main{
 	color:#eee;
 	text-transform: uppercase;
 	font-size: .8rem;
-	margin:initial;
-	text-align:initial;
+	margin: initial;
+	text-align: initial;
+	max-width: initial;
 }
 .section.hero{
 	padding: 10vh 5vw;
@@ -34,7 +35,7 @@ main{
 
 .section {
 	position:relative;
-	padding: 3vh 0 2vh;
+	padding: 3vh 0;
 }
 
 .section heading p,
