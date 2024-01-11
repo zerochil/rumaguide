@@ -3,15 +3,26 @@
 	src: url("Venicelacorla.otf");
 }
 
+a{text-decoration: none;}
+li {list-style: none;}
 h1,h2,h3,h4, li, ul{
 	margin:0px;
 	padding:0px;
+}
+h2{
+	font-family: "Venicelacorla";
 }
 
 
 :root {
 	--red: #F45D4C;
 	--green: #86BB76;
+	--color: red;
+	--accent: #325928;
+	--faint-accent: #546d58;
+	--super-faint-accent: #c9d2c7;
+	--dark-accent: #001b11;
+	--super-dark-accent: #00100a;
 }
 
 body, html {
@@ -20,3 +31,36 @@ body, html {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+
+*{
+	box-sizing: border-box;
+	color: var(--dark-accent);
+}
+
+
+footer li{
+	padding: .5em 0;
+}
+footer li,
+footer a,
+footer h2{
+	color: #eee;
+}
+footer > *{
+	flex:1;
+}
+footer{
+	display: flex;
+	padding: 5vh;
+	background: var(--super-dark-accent);
+	align-items: center;
+	justify-content: center;
+}
+footer h2{
+	letter-spacing:10px;
+	font-size: 3em;
+}
+footer>div>.separator{
+	fill:#aaa;
+	margin:0;
+}
