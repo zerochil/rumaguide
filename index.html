@@ -33,7 +33,20 @@
 					</div>
 
 					<div class="tabcontent" >
-						<img src="assets/images/cities/casablanca.jpg"/>
+						<div class="slideshow">
+
+							<div class="slides">
+								<img class="slide visible" src="assets/images/casa1.jpg">
+								<img class="slide" src="assets/images/casa2.jpg">
+								<img class="slide" src="assets/images/casa3.jpg">
+								<img class="slide" src="assets/images/casa4.webp">
+							</div>
+
+						<div class="slidecontrol">
+							<button class="prev" onclick="triggerSlides(event)">❮</button>
+							<button class="next" onclick="triggerSlides(event)">❯</button>
+						</div>
+						</div>
 						<div class="about">
 							<p>Касабланка</p>
 							<h3>Обзорная экскурсия по касабланке</h3>
@@ -88,6 +101,33 @@
 				tabContent.forEach( (e,i) => e.hidden = ( i != order) )
 				siblings.forEach( (e,i) => e.classList.toggle('selected', i === order) )
 			}
+			const triggerSlides = (e, name=e.target.className) => {
+				const visible = e.target.closest('.slideshow').querySelector('.slide.visible');
+				const next = (name == 'prev')? visible.previousElementSibling : visible.nextElementSibling;
+				if ( next == null ) return;
+				visible.classList.remove("visible");
+				next.classList.add("visible");
+			}
+			( () => { 
+				let touchstartX = 0;
+				let touchendX = 0;
+						
+				function checkDirection(e) {
+					if (touchendX > touchstartX) triggerSlides(e, 'prev')
+					if (touchendX < touchstartX) triggerSlides(e, 'next')
+				}
+
+				document.querySelectorAll('.slideshow').forEach( element => {
+					element.addEventListener('touchstart', e => {
+						touchstartX = e.changedTouches[0].screenX
+					})
+
+					element.addEventListener('touchend', e => {
+						touchendX = e.changedTouches[0].screenX
+						checkDirection(e)
+					})
+				})
+			})();
 		</script>
 	</body>
 </html>
