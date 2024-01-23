@@ -26,7 +26,7 @@ main{
 .hero heading h1{
 	color:#eee;
 	font-family: "Venicelacorla";
-	font-size: 12vw;
+	font-size: max(5em, 12vw);
 	line-height:150%;
 	margin:0;
 	font-weight:lighter;
@@ -125,9 +125,9 @@ main{
 .tabcontent > .about{
 	padding: 1em 2em;
 }
-.tabcontent > .about  li {
-	padding: .2em 0;
-}
+.tabcontent > .about  h4 { color:crimson; }
+.tabcontent > .about  ul { padding: .4em 0; }
+.tabcontent > .about  li { padding: .2em 0; }
 .tabcontent > .about  li>img {
 	width: 1.3em;
 	vertical-align: text-bottom;
