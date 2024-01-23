@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="all.css">
+		<link rel="stylesheet" href="index.css">
+	</head>
+
+	<body>
+<!-- 
+	accessibility: Hero Section, header? heading?
+	accessibility: decorative images
+	accessibility: tabs
+		https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tabpanel_role
+		https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role
+	TITLE separator
+-->
+
+
+		<main>
+
+			<section class="section hero">
+				<heading>
+					<p><span>—</span> You Perfect Journey to</p>
+					<h1>Morocco</h1>
+				</heading>
+			</section>
+
+			<section class="section excursions">
+				<heading>
+					<h2>Excursions</h2>
+					<svg class="separator" style="fill:var(--dark-accent)">
+						<use href="assets/svgs/separator2.svg#layer"></use>
+					</svg>
+					<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable. Passez vos journées à explorer les cours intérieures paisibles, les ruelles tortueuses de la Médina historique</p>
+					<!-- <div class="separator"></div> -->
+					<!-- <svg src="assets/svgs/separator.svg"></svg> -->
+					<!-- <div class="separator"></div> -->
+				</heading>
+
+				<div class="tabgroup">
+					<div class="tab">
+						<button class="tablinks selected" onclick="openCity(event)">Casablanca</button>
+						<button class="tablinks" onclick="openCity(event)">Marrakech</button>
+						<button class="tablinks" onclick="openCity(event)">Chefchaoun</button>
+					</div>
+
+					<div class="tabcontent" >
+						<img src="assets/images/cities/casablanca.jpg"/>
+						<div class="about">
+							<p>Casablanca</p>
+							<h3>The Capital and the largest city</h3>
+							<div class="meta">
+								<p class="time">1 night</p>
+								<p class="price">300$</p>
+							</div>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<ul>
+								<li><img src="assets/svgs/dinner.svg"/> Dinner included</li>
+								<li><img src="assets/svgs/backpack.svg"/> Leave your backpack in the hotel</li>
+								<li><img src="assets/svgs/plane.svg"/> Transfer from the hotel</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="tabcontent" hidden>
+						<img src="assets/images/cities/marrakech.jpg"/>
+						<div class="about">
+							<p>Casablanca</p>
+							<h3>The Capital and the largest city</h3>
+							<div class="meta">
+								<p class="time">1 night</p>
+								<p class="price">300$</p>
+							</div>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<ul>
+								<li><img src="assets/svgs/dinner.svg"/> Dinner included</li>
+								<li><img src="assets/svgs/backpack.svg"/> Leave your backpack in the hotel</li>
+								<li><img src="assets/svgs/plane.svg"/> Transfer from the hotel</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="tabcontent" hidden>
+						<img src="assets/images/cities/chefchaouen.jpg"/>
+						<div class="about">
+							<p>Casablanca</p>
+							<h3>The Capital and the largest city</h3>
+							<div class="meta">
+								<p class="time">1 night</p>
+								<p class="price">300$</p>
+							</div>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<ul>
+								<li><img src="assets/svgs/dinner.svg"/> Dinner included</li>
+								<li><img src="assets/svgs/backpack.svg"/> Leave your backpack in the hotel</li>
+								<li><img src="assets/svgs/plane.svg"/> Transfer from the hotel</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<!-- Section Division  -->
+
+			<section class="section circuits">
+				<heading>
+					<h2>Circuits</h2>
+					<svg class="separator" style="fill:var(--dark-accent)">
+						<use href="assets/svgs/separator2.svg#layer"></use>
+					</svg>
+					<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable. Passez vos journées à explorer les cours intérieures paisibles, les ruelles tortueuses de la Médina historique</p>
+					<!-- <div class="separator"></div> -->
+				</heading>
+
+				<div class="tabgroup">
+					<div class="tab">
+						<button class="tablinks selected" onclick="openCity(event)">Casa-Marrakech</button>
+					</div>
+
+					<div class="tabcontent" >
+						<img src="assets/images/cities/casablanca.jpg"/>
+						<div class="about">
+							<h3>Casablanca-Marrakech Circuit</h3>
+							<div class="meta">
+								<p class="time">13 days</p>
+								<p class="price">1300$</p>
+							</div>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<h4>Day 1: Arrival &amp; local visit</h4>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<h4>Day 2: Chefchaoun</h4>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<h4>Day 3: Fes</h4>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<h4>Day 4: Merzoura</h4>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<h4>Day 5: Dades</h4>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+							<h4>Day 5: Marrakech</h4>
+							<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable</p>
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- Section Division  -->
+
+			<section class="section transport">
+				<heading>
+					<h2>Transport</h2>
+					<svg class="separator" style="fill:var(--dark-accent)">
+						<use href="assets/svgs/separator2.svg#layer"></use>
+					</svg>
+					<p>Souks colorés, architecture maure, jardins intimes et hôtels boutiques… Marrakech est une ville inoubliable. Passez vos journées à explorer les cours intérieures paisibles, les ruelles tortueuses de la Médina historique</p>
+					<!-- <div class="separator"></div> -->
+				</heading>
+
+				<div class="tabgroup">
+					<div class="tab">
+						<button class="tablinks selected" onclick="openCity(event)">2-6 places</button>
+						<button class="tablinks" onclick="openCity(event)">6-17 places</button>
+						<button class="tablinks" onclick="openCity(event)">17-25 places</button>
+					</div>
+
+					<div class="tabcontent" >
+						<img src="assets/images/cars/vito.jpg"/>
+						<div class="about">
+							<p>Vito</p>
+						</div>
+					</div>
+
+
+					<div class="tabcontent" hidden>
+						<img src="assets/images/cars/sprinter.jpg"/>
+						<div class="about">
+							<p>Sprinter</p>
+						</div>
+					</div>
+
+
+					<div class="tabcontent" hidden>
+						<img src="assets/images/cars/ivico_minibus.jpg"/>
+						<div class="about">
+							<p>ivico Minibus</p>
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<footer class="section">
+					<ul>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact US</a></li>
+					</ul>
+					<ul>
+						<li>avianet@hotmail.com</li>
+						<li>+212 64924910</li>
+						<li><a href="#">Follow us</a></li>
+					</ul>
+					<div>
+						<h2>rumaguide</h2>
+						<svg class="separator">
+							<use href="assets/svgs/separator2.svg#layer"></use>
+						</svg>
+					<div>
+			</footer>
+
+		</main>
+		<script>
+			const openCity = (e) => {
+				const siblings = Array.from(e.target.parentNode.children);
+				const order = siblings.indexOf(e.target);
+				const tabContent = e.target.closest('.tabgroup').querySelectorAll('.tabcontent');
+				tabContent.forEach( (e,i) => e.hidden = ( i != order) )
+				siblings.forEach( (e,i) => e.classList.toggle('selected', i === order) )
+			}
+		</script>
+	</body>
+</html>
