@@ -26,13 +26,11 @@ main{
 .hero heading h1{
 	color:#eee;
 	font-family: "Venicelacorla";
-	font-size: max(5em, 12vw);
+	font-size: clamp(5em, 10vw, 10em);
 	line-height:150%;
 	margin:0;
 	font-weight:lighter;
 }
-
-/*  */
 
 .section {
 	position:relative;
@@ -187,5 +185,5 @@ main{
 .slidecontrol{
 	display:flex;
 	position:relative;
-	top:-50%;
+	top:calc( -50% - 20px);
 }
