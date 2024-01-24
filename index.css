@@ -74,8 +74,13 @@ main{
 }
 .tabgroup .tab {
 	display: flex;
+	overflow:scroll;
+	scrollbar-width: none;
+	scroll-snap-type: x mandatory;
 }
+.tabgroup .tab::-webkit-scrollbar { display: none; }
 .tabgroup .tab button {
+	scroll-snap-align: start;
 	background-color: white;
 	border: none;
 	padding: 1rem 2rem;
