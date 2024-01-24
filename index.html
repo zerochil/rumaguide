@@ -187,12 +187,13 @@
 				let touchendX = 0;
 						
 				function checkDirection(e) {
-					if (touchendX > touchstartX) triggerSlides(e, 'prev')
-					if (touchendX < touchstartX) triggerSlides(e, 'next')
+					if (touchendX > touchstartX - 50) triggerSlides(e, 'prev')
+					if (touchendX < touchstartX + 50) triggerSlides(e, 'next')
 				}
 
 				document.querySelectorAll('.slideshow').forEach( element => {
 					element.addEventListener('touchstart', e => {
+						console.log(e)
 						touchstartX = e.changedTouches[0].screenX
 					})
 
