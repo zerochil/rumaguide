@@ -131,16 +131,26 @@ main{
 .tabcontent > .about  h4 { color:crimson; }
 .tabcontent > .about  ul { padding: .4em 0; }
 .tabcontent > .about  li { padding: .2em 0; }
-.tabcontent > .about  li>img {
+.tabcontent > .about  img {
 	width: 1.3em;
 	vertical-align: text-bottom;
+}
+.tabcontent > .about  svg {
+	width: 1em;
+	height: 1em;
 }
 .tabcontent > .about > .meta {
 	font-weight:bold;
 	display:flex;
 	gap: 1rem;
 }
-.tabcontent .meta > .time { color: crimson; }
+.tabcontent > .about > .meta > * {
+	display:flex;
+	gap: .5em;
+	justify-content: space-between;
+
+}
+.tabcontent .meta > .time { color: crimson; fill: crimson; }
 .tabcontent .meta > .price { color: darkorange; }
 .tabcontent > .about > h3 {
 	font-family: times, serif;

@@ -31,8 +31,9 @@
 				<div class="tabgroup">
 					<div class="tab">
 						<button class="tablinks selected" onclick="openCity(event)">Касабланка</button>
-						<button class="tablinks" onclick="openCity(event)">рабат</button>
+						<button class="tablinks" onclick="openCity(event)">Рабат</button>
 						<button class="tablinks" onclick="openCity(event)">Марракеш</button>
+						<button class="tablinks" onclick="openCity(event)">Агадире</button>
 					</div>
 
 					<div class="tabcontent" >
@@ -51,10 +52,10 @@
 						<div class="about">
 							<h3>Обзорная экскурсия по касабланке</h3>
 							<div class="meta">
-								<p class="time">3 часа</p>
+								<p class="time"><svg><use href="assets/svgs/hour.svg#layer"></use></svg> 3 часа</p>
 							</div>
 							<p><strong>Основная достопримечательность:</strong> Мечеть Хасана II расположенная в Марокко г.Касабланка, построенная на берегу Атлантического океана.</p>
-							<h4>Обзорная экскурсия по городу</h4>
+							<h4>Обзорная экскурсия по городу:</h4>
 							<ul>
 								<li>централный рынок</li>
 								<li>Крепост Сакала</li>
@@ -84,12 +85,12 @@
 							</div>
 						</div>
 						<div class="about">
-							<h3>Обзорная экскурсия по Рабату</h3>
+							<h3>Обзорная экскурсия по Рабат</h3>
 							<div class="meta">
-								<p class="time">3 часа</p>
+								<p class="time"><svg><use href="assets/svgs/hour.svg#layer"></use></svg>3 часа</p>
 							</div>
 							<p>Рабат, административная столица Марокко, построенная на берег Атлантического океана и реки Бурегрег. Внутри Крепость Удайя застроена панорамными жилыми домами с глухими бело-голубыми стенами.</p>
-							<h4>Обзорная экскурсия по городу</h4>
+							<h4>Обзорная экскурсия по городу:</h4>
 							<ul>
 								<li>Касба-де-Удайя</li>
 								<li>андалузский сад</li>
@@ -124,20 +125,64 @@
 						<div class="about">
 							<h3>Обзорная экскурсия по марракеше</h3>
 							<div class="meta">
-								<p class="time">4 часа</p>
+								<p class="time"><svg><use href="assets/svgs/hour.svg#layer"></use></svg> 4 часа</p>
 							</div>
 							<p>марракеш Берберские город расположенный в центральном марроко подножия атласких гор</p>
 							<h4>Экскурсия включает посещение мест:</h4>
 							<ul>
-								<li>ворот агнаои</li>
+								<li>Баб-Агнау</li>
 								<li>мавзолей саадить</li>
-								<li>площадь малах</li>
-								<li>дворец вахия</li>
-								<li>по Базару до матраса бен уюсефа</li>
+								<li>площадь Меллах – еврейский квартал</li>
+								<li>Дворец Бахия</li>
+								<li>по Базару до севера бен юсефа</li>
 								<li>жамаа лафна</li>
-								<li>мечеть кутубия</li>
+								<li>мечеть Аль-Кутубия</li>
 								<li>менара</li>
-								<li>мажорель</li>
+								<li>мажорель (majorel)</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="tabcontent" hidden>
+						<div class="slideshow">
+							<div class="slides">
+								<img class="slide visible" src="assets/images/agadir1.jpg">
+								<img class="slide" src="assets/images/agadir2.jpg">
+								<img class="slide" src="assets/images/agadir3.jpg">
+								<img class="slide" src="assets/images/agadir4.jpg">
+								<img class="slide" src="assets/images/agadir5.jpg">
+								<img class="slide" src="assets/images/agadir6.jpg">
+								<img class="slide" src="assets/images/agadir7.jpg">
+								<img class="slide" src="assets/images/agadir8.jpg">
+							</div>
+							<div class="slidecontrol">
+								<button class="prev" onclick="triggerSlides(event)">❮</button>
+								<button class="next" onclick="triggerSlides(event)">❯</button>
+							</div>
+						</div>
+
+
+						<div class="about">
+							<h3>Обзорная экскурсия в Агадире</h3>
+							<div class="meta">
+								<p class="time"><svg><use href="assets/svgs/hour.svg#layer"></use></svg> 4 часа</p>
+							</div>
+							<p>Агадир берберские город находится на  берегу Атлантического океана в южной части Марокко в долине центр региона Сус-Масса-Драа. известен как центр пляжного отдыха для туристов и самый популярный курорт в Марокко.</p>
+							<h4>Обзорная экскурсия по городу:</h4>
+							<ul>
+								<li>Порт марина Агадир</li>
+								<li>Мечеть мохаммеда v</li>
+								<li>крепост (касба уфелла)</li>
+								<li>Швейцарский Квартал</li>
+								<li>Медина (старый город)</li>
+								<li>рынок ель-хадь</li>
+								<li>Канатная дорога Агадира</li>
+							</ul>
+							<h4>Специально зкскурсию область Агадира:</h4>
+							<ul>
+								<li>пляж Легзира</li>
+								<li>город Эс-Сувейра</li>
 							</ul>
 						</div>
 					</div>
@@ -160,10 +205,7 @@
 					</ul>
 					<div>
 						<h2>rumaguide</h2>
-						<svg class="separator">
-							<use href="assets/svgs/separator2.svg#layer"></use>
-						</svg>
-					</div>
+						<svg class="separator"><use href="assets/svgs/separator2.svg#layer"></use></svg> </div>
 			</footer>
 
 		</main>
@@ -172,8 +214,8 @@
 				const siblings = Array.from(e.target.parentNode.children);
 				const order = siblings.indexOf(e.target);
 				const tabContent = e.target.closest('.tabgroup').querySelectorAll('.tabcontent');
-				tabContent.forEach( (e,i) => e.hidden = ( i != order) )
-				siblings.forEach( (e,i) => e.classList.toggle('selected', i === order) )
+				tabContent.forEach( (e,i) => e.hidden = ( i != order) );
+				siblings.forEach( (e,i) => e.classList.toggle('selected', i === order) );
 			}
 			const triggerSlides = (e, name=e.target.className) => {
 				const visible = e.target.closest('.slideshow').querySelector('.slide.visible');
@@ -187,18 +229,18 @@
 				let touchendX = 0;
 						
 				function checkDirection(e) {
-					if (touchendX > touchstartX - 50) triggerSlides(e, 'prev');
-					else if (touchendX < touchstartX + 50) triggerSlides(e, 'next');
+					if (touchendX > touchstartX && touchendX - touchstartX > 50) triggerSlides(e, 'prev');
+					else if (touchstartX > touchendX && touchstartX - touchendX > 50) triggerSlides(e, 'next');
 				}
 
 				document.querySelectorAll('.slideshow').forEach( element => {
 					element.addEventListener('touchstart', e => {
-						touchstartX = e.changedTouches[0].screenX
+						touchstartX = e.changedTouches[0].screenX;
 					})
 
 					element.addEventListener('touchend', e => {
-						touchendX = e.changedTouches[0].screenX
-						checkDirection(e)
+						touchendX = e.changedTouches[0].screenX;
+						checkDirection(e);
 					})
 				})
 			})();
